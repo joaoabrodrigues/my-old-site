@@ -7,7 +7,7 @@
 	$data = date('d/m/Y H:i');
 	
 	if($name == null || $email == null || $message == null || $subject == null ){
-		echo "<script>alert('Espertinho(a), não é pra enviar o formulário vazio!'); </script>";
+		echo "<script>alert('E-mail não enviado. Formulário com preenchimento inválido.'); </script>";
 		echo "<script>location.href='http://www.joaoabrodrigues.com/#contato'</script>";
 	} else  {
 
@@ -32,10 +32,10 @@
     $status = mail($email_to, $assunto, $corpo, $headers);
 
 	 if($status){
-		echo "<script>alert('Formulário enviado com sucesso! Obrigado :D'); </script>"; // Página que será redirecionada	
+		echo "<script>alert('Formulário enviado com sucesso!'); </script>"; // Página que será redirecionada	
 	 }
 	 else{
-		echo "<script> alert('Falha de envio! Desculpe :('); </script>"; // Página que será redirecionada
+		echo "<script> alert('Ocorreu um erro eo enviar o e-mail, tente novamente mais tarde.'); </script>"; // Página que será redirecionada
 	 }
 	 echo "<script>location.href='http://www.joaoabrodrigues.com'</script>"; // Página que será redirecionada
   }
