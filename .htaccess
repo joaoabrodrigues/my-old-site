@@ -13,6 +13,8 @@
   RewriteRule ^rastreio/.*$ projects/rastreio/index.html [NC,L,QSA]
 
   RewriteRule ^projects/rastreio/rastreio/.*$ projects/rastreio/index.html [NC,L,QSA]
+
+  RewriteRule ^correios-tracking-frontend/rastreio/.*$ index.html [NC,L,QSA]
   
 </IfModule>
 
