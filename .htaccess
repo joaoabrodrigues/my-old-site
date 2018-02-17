@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+
+  RewriteRule ^home/?$ index.html [NC,L]
+
+  RewriteRule ^contato/?$ enviar_contato.php [NC,L]
+  
+  RewriteRule ^home/?$ index.html [NC,L]
+
+  RewriteRule ^contato/?$ enviar_contato.php [NC,L]
+
+  RewriteRule ^rastreio/.*$ projects/rastreio/index.html [NC,L,QSA]
+
+  RewriteRule ^projects/rastreio/rastreio/.*$ projects/rastreio/index.html [NC,L,QSA]
+  
+</IfModule>
+
+ErrorDocument 404 /404.html
